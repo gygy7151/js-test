@@ -5,7 +5,8 @@
 */
 
 let input = require("fs")
-    .readFileSync("test.txt")
+    /*경로 수정주의 */
+    .readFileSync("/dev/stdin")
     .toString()
     .trim()
     .split("\n");
