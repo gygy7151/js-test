@@ -1,3 +1,1 @@
-# literate-engine
-
-# js-test
+# 백준연습장
