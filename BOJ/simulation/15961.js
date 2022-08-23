@@ -30,8 +30,8 @@ let ans = cur;
 
 // 두번째조합
 for (let i = 1; i < N + 1; i++) {
-    let left = i - 1;
-    let right = i - 1 + k;
+    let left = i - 1; // 아니면 i
+    let right = i - 1 + k; // 아니면 i + k 기존 길이보다 +1한 다음 내용에 접근해야함 초밥을 추가하는거기때문에 주의
 
     eat[sushi[left]] -= 1;
     if (eat[sushi[left]] == 0) {
