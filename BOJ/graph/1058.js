@@ -1,3 +1,5 @@
+// 친구
+// - 첫번째풀이
 let input = require("fs").readFileSync("/dev/stdin").toString().split("\n");
 
 const N = Number(input[0]);
