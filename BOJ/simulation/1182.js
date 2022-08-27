@@ -1,4 +1,5 @@
 // 부분 수열의 합
+// - S랑 일치하는 합이 존재하는지 안하는지 boolean 값으로 리턴하는 문제로도 응용가능
 // - 첫번째풀이
 let input = require("fs").readFileSync("./test.txt").toString().split("\n");
 let info = input[0].split(" ").map(x => Number(x));
