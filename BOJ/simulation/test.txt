@@ -1,5 +1,9 @@
-4
-a a
-ab ba
-ring gnir
-newt twan
+20
+7
+23
+19
+10
+15
+25
+8
+13
