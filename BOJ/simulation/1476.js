@@ -12,9 +12,8 @@
  * 준규가 사는 나라에서 우리가 알고 있는 연도로 몇년인지 프로그램을 작성하시오
  */
 
-// fs말고 readline으로 하는게 맞음
+// 애초에 메모리 초과 때문에 node.js론 풀 수 없는 문제 였음
 
-const { mainModule } = require("process");
 const readline = require("readline");
 
 const rl = readline.createInterface({
@@ -24,10 +23,6 @@ const rl = readline.createInterface({
 
 rl.on("line", (line) => {
     const [E, S, M] = line.split(" ").map(Number);
-    main(E, S, M);
-});
-
-const main = (E, S, M) => {
     let nowYear = 1;
     while (true) {
         if ((count - E) % 15 === 0 && (count - S) % 28 === 0 && (count - M) % 19 === 0) {
@@ -37,4 +32,4 @@ const main = (E, S, M) => {
             nowYear++;
         }
     }
-}
+});
