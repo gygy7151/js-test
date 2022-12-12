@@ -1,4 +1,4 @@
-// 
+// A와 B 정수크기 비교
 // 네번째풀이- 맨마지막 출력시 오름차순 출력을 놓쳤음..
 const readline = require("readline");
 
