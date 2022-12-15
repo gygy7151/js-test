@@ -1,22 +1,21 @@
 // 별찍기
 // 두번째풀이- 잘못된 규칙을 수정함
 let N = require("fs").readFileSync("/dev/stdin").toString().trim();
-N = Number(N);
 
-for (let i=1; i<=N; i++){
-	let answer = [];
-	answer.push('*'.repeat(i));
-	answer.push(' '.repeat(2*(N-i)));
-	answer.push('*'.repeat(i));
-	console.log(answer.join(""));
+for(let i=1; i<Number(N)+1; i++){
+	let answer = []
+	answer.push('*'.repeat(i))
+	answer.push(' '.repeat(2*N-2*i))
+	answer.push('*'.repeat(i))
+	console.log(answer.join(''))
 }
 
-for (let i=N-1; i>0; i--){
-	let answer = [];
-	answer.push('*'.repeat(i));
-	answer.push(' '.repeat(2*(N-i)));
-	answer.push('*'.repeat(i));
-	console.log(answer.join(""));
+for(let i=N-1; i>0; i--){
+	let answer = []
+	answer.push('*'.repeat(i))
+	answer.push(' '.repeat(2*N-2*i))
+	answer.push('*'.repeat(i))
+	console.log(answer.join(''))
 }
 
 
