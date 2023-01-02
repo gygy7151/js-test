@@ -3,8 +3,6 @@
 // [ 접근방법 ]
 // dp점화식이 dp[i-1]*2이여야하는데 뒤바뀌어 있었다.
 // dp 배열 선언문이 없이 그냥 dp = [];를 정의한게 문제였다.
-// dp
-
 
 let N = require('fs').readFileSync("/dev/stdin", "utf-8").toString().trim();
 
